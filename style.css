@@ -3,14 +3,14 @@ body{
     }
     
 
-     h1{ background-color: aliceblue;
+     h1{ background-color: rgb(0, 0, 0);
      font-size: 45px;
-     color: rgb(33, 145, 243);
+     color: rgb(255, 255, 255);
      text-align: center;
  
      }
 
-    p{ background-color: blueviolet;
+    p{ background-color: rgb(0, 0, 0);
      color: bisque;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      text-align: center; }
