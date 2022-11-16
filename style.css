@@ -23,4 +23,12 @@ body{
         width: 10%;
         margin: 0 auto;
     }
-    
+   
+    #logo   { 
+        width: 100%;
+   }
+
+   .container{
+      width: 10%;
+      margin: 0 auto;
+  }
