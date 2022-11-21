@@ -18,9 +18,9 @@ body{
 
      #produtos     { 
         width: 90%;
-   }
+     }
 
-.container{
-  width: 10%;
-  margin: 0 auto;
-}
+     .container{
+     width: 10%;
+     margin: 0 auto;
+     }
