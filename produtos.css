@@ -10,7 +10,7 @@ body{
  
      }
 
-    p{ background-color: black;
+    p{ background-color: rgb(255, 255, 255);
      color: blueviolet;
      font-family:Verdana, Geneva, Tahoma, sans-serif ;
      text-align:center: }
