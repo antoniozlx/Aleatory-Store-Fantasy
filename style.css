@@ -169,3 +169,26 @@ footer p {
   margin: 0;
 }
 
+.cart img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.item-count {
+  background-color: #4CAF50;
+  color: #222222;
+  padding: 3px 8px;
+  border-radius: 50%;
+}.cart img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.item-count {
+  background-color: #4CAF50;
+  color: #222222;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
