@@ -78,7 +78,7 @@ body {
 .support {
   margin-top: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #242424;
 }
 
 .support h3 {
@@ -89,7 +89,7 @@ body {
 .payment-methods {
   margin-top: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #1f1f1f;
 }
 
 .payment-methods h3 {
