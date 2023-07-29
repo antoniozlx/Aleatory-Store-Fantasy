@@ -169,10 +169,10 @@ footer p {
   margin: 0;
 }
 
-#blusao     { 
-  width: 90%;
-}
-.container{
-width: 10%;
-margin: 0 auto;
+blusao img { 
+
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
