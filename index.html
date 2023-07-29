@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Vendas</title>
+    <title>Meu Site de Vendas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Site de Vendas</h1>
-    </header>
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button type="submit">Buscar</button>
+    </div>
 
-    <main>
-        <section class="destaques">
-            <h2>Destaques</h2>
-            <!-- Coloque aqui os produtos em destaque -->
-        </section>
+    <!-- Carrinho de Compras -->
+    <div class="cart">
+        <span class="item-count">3</span>
+        <img src="carrinho.png" alt="Carrinho de Compras">
+    </div>
 
-        <section class="produtos">
-            <h2>Todos os Produtos</h2>
-            <!-- Coloque aqui a lista de produtos -->
-        </section>
-    </main>
+    <!-- Avaliações e Comentários -->
+    <div class="reviews">
+        <h3>Avaliações e Comentários</h3>
+        <ul>
+            <li>
+                <strong>Usuário 1:</strong>
+                <p>Ótimo produto! Recomendo.</p>
+            </li>
+            <li>
+                <strong>Usuário 2:</strong>
+                <p>Entrega rápida e boa qualidade.</p>
+            </li>
+        </ul>
+    </div>
 
-    <footer>
-        <p>Todos os direitos reservados &copy; 2023</p>
-    </footer>
+    <!-- Suporte -->
+    <div class="support">
+        <h3>Suporte</h3>
+        <p>Entre em contato conosco para qualquer dúvida ou problema:</p>
+        <p>Email: suporte@meusite.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </div>
+
+    <!-- Formas de Pagamento -->
+    <div class="payment-methods">
+        <h3>Formas de Pagamento</h3>
+        <img src="cartoes.png" alt="Cartões de Crédito">
+        <img src="paypal.png" alt="PayPal">
+    </div>
+
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Meu Site</title>
-</head>
-<body>
-    <h4>Formulário de contato</h4>
-    <form action="/enviar_formulario" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-        
-        <input type="submit" value="Enviar">
-    </form>
