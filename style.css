@@ -168,3 +168,12 @@ footer {
 footer p {
   margin: 0;
 }
+
+#Moleton     { 
+  width: 90%;
+}
+
+.container{
+width: 10%;
+margin: 0 auto;
+}
