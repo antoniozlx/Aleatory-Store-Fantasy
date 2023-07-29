@@ -9,7 +9,7 @@ body {
 
 /* Barra de Pesquisa */
 .search-bar {
-  background-color: #2e2e2e;
+  background-color: #000000;
   padding: 10px;
   display: flex;
   align-items: center;
