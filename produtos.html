@@ -1,168 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="/scr/css/carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCIFloridaExport</title>
-    <link rel="shortcut icon" href="images/logo-site/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css/style.css">
+    <title>Repono</title>
 </head>
 <body>
-       <header>
-                <img src="images/logo-site/-_Logotipo - Horizontal - Preto.png" alt="img-logo">
-       </header>
+    <!-- cabeçalho-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <a class="logo" href="#">Repono</a>
+            <!--Icone Carrinho-->
+            <i class='bx bx-shopping-bag' id="carrinho-icone"></i>
+            <!--carrinho-->
+            <div class="carrinho">
+                <h2 class="carrinho-titulo" ">
+                    Seu Carrinho
+                </h2>
+                <!--Conteudo-->
+                <div class="carrinho-conteudo">
 
-       <!--Talvez um nav por aqui...-->
-
-       <nav id="nav">
-            <a href="#">Armas</a>
-            <a href="#">Munições</a>
-            <a href="#">Acessórios</a>
-            <a href="suporte.html" target="_self">Apoio, Suporte</a>
-       </nav>
- 
-       <div id="banner">
-                    <!-- imagem com subtitulo da page-->
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="trust-sig-ammo2-min2.jpg">
-                        <img src="trust-sig-ammo2-min.jpg" alt="">
-                    </picture>
-       </div>
-
-
-       <div id="classes-produtos">
-
-        <section class="opcoes" id="handguns">
-             <h3>Handguns</h3>
-             <a href="headguns/headguns.html"><img src="images/guns/naom_60190a3f338ea.jpg"></a>
-        </section>
-
-        <section class="opcoes" id="assault-rifles">
-             <h3>Assault Rifles</h3>
-             <a href="#"><img src="images/assault rifle/2fda17f5d55ff6909d8301af75b0aa6b.jpg" alt=""></a>
-        </section>
-
-        <section class="opcoes" id="shotguns">
-         <h3>Shotguns</h3>
-         <a href="#"><img src="images/shotguns/i3kFyg.jpg" alt=""></a>
-         </section>
-
-         <!--Aqui tinha um br porem, eu retirei -->
-
-         <section class="opcoes" id="ammunitions">
-             <h3>Ammunition</h3>
-             <a href="#"><img src="images/ammunition/Weapon-ammunition-bullets_3840x2160.jpg" alt=""></a>
-         </section>
-        
-         <section class="opcoes" id="optics">
-             <h3>Optics</h3>
-             <a href="#"><img src="images/optics/rif_rzr-5-20_sub-category.jpg" alt=""></a>
-         </section>
-
-         <section class="opcoes" id="acessories">
-             <h3>Acessories</h3>
-             <a href="#"><img src="images/magazines/magazines-vs-clips.jpg" alt=""></a>
-         </section>
-    </div> 
-
-     <hr>
- 
-       <main>
             
-            <article id="sobre">
-                    <!--descricao sobre nós-->
-                    <h2>SCI Florida Export</h2>
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-titulo">Total</div>
+                    <div class="total-preco">R$0.00</div>
+                </div>
+                <!--Botão-->
+                <button type="botao" class="btn-comprar">
+                    Comprar agora
+                </button>
+                <!--Fechar carrinho-->
+                <i class='bx bx-x' id="fechar-carrinho"></i>
+            </div>
+        </div>
+    </header>
+    <!--carrinho-->
+    <section class="shopp container">
+        <h2 class="titulo">
+            Shopp de Produtos
+        </h2>
+        <!--Conteudo-->
+        <div class="conteudo-loja">
+            <!--Caixa 1-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/blusa1.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA BEGE
+                </h2>
+                <span class="preco">
+                    R$29.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 2-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/blusa2.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA DEUS GREGO
+                </h2>
+                <span class="preco">
+                    R$30.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 3-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/blusa3.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA PRETA LISA
+                </h2>
+                <span class="preco">
+                    R$30.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 4-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/bobojaco.png" alt="">
+                <h2 class="produto-titulo">
+                    BOBOJACO
+                </h2>
+                <span class="preco">
+                    R$250.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 5-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/camisa2.jpg" alt="">
+                <h2 class="produto-titulo">
+                    CAMISA
+                </h2>
+                <span class="preco">
+                    R$50.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 6-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/calça.jpg" alt="">
+                <h2 class="produto-titulo">
+                    CALÇA
+                </h2>
+                <span class="preco">
+                    R$60.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 7-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/conjunto.png" alt="">
+                <h2 class="produto-titulo">
+                    CONJUNTO
+                </h2>
+                <span class="preco">
+                    R$119.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 8-->
+            <div class="produto-box">
+                <img class="produto-img" src="/scr/imagens/jaqueta.png" alt="">
+                <h2 class="produto-titulo">
+                    JAQUETA
+                </h2>
+                <span class="preco">
+                    R$159.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+        </div>
+    </section>
+    <!--Link do JS-->
+    <script src="/scr/js/carrinho.js"></script>
 
-                    <p>Bem-vindo ao SCIFloridaExport, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores odit, similique velit vel praesentium harum aperiam rerum, magni, quo consequuntur totam quas quidem. A ipsa quae mollitia enim nostrum dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum eum modi, veritatis quibusdam voluptates qui sunt, voluptatibus at suscipit cumque hic, asperiores enim soluta. Ipsa, consequatur? Esse, laborum unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae facere libero, commodi ad sunt! In expedita officiis, blanditiis tempora repellat eius laborum, natus recusandae accusamus exercitationem, numquam adipisci dolores?</p>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
-                    <p>Além de nossa vasta seleção de armas de fogo, oferecemos <a href="#">munições</a> , <a href="#">acessórios</a> , <a href="#">peças</a> e <a href="#">equipamentos</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit nemo suscipit perspiciatis soluta illo dolore quas porro rerum. Aperiam iusto, blanditiis rem modi nemo sit necessitatibus aspernatur nisi aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod eos, incidunt esse voluptates maiores non nulla itaque veniam illum debitis? Qui inventore molestiae assumenda sequi quam illo impedit quae.</p>
-
-                    <aside>
-                        <p>A SCIFloridaExport orgulhosamente apoia e acredita na posse responsável de armas.</p>
-                    </aside>
-
-            </article>
-
-            <hr>
-
-            <aside id="formulario">
-                    <!--formulario-->
-                    <h2>Inscreva-se agora para ser notificado sobre brindes grátis e ofertas especiais!</h2>
-
-                    <form>
-                        <input type="email" id="email" placeholder="Seu endereço de email"><input type="button" value="SE INSCREVER" id="button">
-                    </form>
-            </aside>
-            <aside id="contatos">
-                    <!--contatos-->
-                    <ul type="none">
-                        <li>
-                                <h3>Perguntas e Pedidos</h3>   
-                                <p><strong>Pedido por telefone:</strong> <br> 32811-3128 <br>
-                                <br>        
-                                <strong>Horário de Funcionamento</strong> <br> Seg a Sex: <br>
-                                10h00 - 16h00 (MST) <br> Fechado aos domingos <br>
-                                <br>    
-                                <strong>Envie-nos um email</strong> <br> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/scifloridasocial%40gmail.com" target="_blank" rel="external" class="links">scifloridasocial@gmail.com</a>
-                            </p>
-                        </li>
-                        <li>
-                                <h3>Mais informações</h3>
-                                <nav class="links">
-                                    <a href="mapa-do-site.html" target="_self">Mapa do Site</a><br>
-                                    <a href="sobre-nos.html" target="_self">Sobre Nós</a><br>
-                                    <a href="envio.html" target="_self">Envio</a><br>
-                                </nav>
-                        </li>
-                        <li>
-                                <h3>Comprar</h3>
-
-                                <nav class="links">
-                                    <a href="headguns/headguns.html">Pistolas</a><br>
-                                    <a href="#">Rifles</a><br>
-                                    <a href="#">Munição</a><br>
-                                    <a href="#">Acessórios</a><br>
-                                </nav>
-                        </li>
-                        <li>
-                                <h3>Atendimento ao cliente</h3>
-
-                                <nav class="links">
-                                    <a href="termosDeServico.html" target="_self">Termos de Serviço</a><br>
-                                    <a href="politicaDePrivacidade.html" target="_self">Política de Privacidade</a><br>
-                                    <a href="politicaDeRetorno.html" target="_self">Política do Retorno</a><br>
-                                </nav>
-                        </li>
-                        <li>
-                                <h3>Permaneça conectado</h3>
-
-                                <p>Siga-nos nas redes sociais:</p>
-                                <nav class="links">
-                                    <a href="https://www.facebook.com/profile.php?id=100074097454486" target="_blank" rel="external" id="fb"><img src="images/icones-redes-sociais/icone-facebook.png" alt="icon-fb"></a>
-                                    <a href="https://twitter.com/sciflorida" target="_blank" rel="external" id="tt"><img src="images/icones-redes-sociais/icone-twitter.png" alt="icon-tt"></a>
-                                    <a href="https://www.instagram.com/scifloridaexport/" target="_blank" rel="external" id="insta"><img src="images/icones-redes-sociais/icone-instagram.png" alt="icon-insta"></a>
-                                    <a href="https://www.youtube.com/channel/UCa1A03wQMoML6mLKfTvRTPg" target="_blank" rel="external" id="yt"><img src="images/icones-redes-sociais/icone-youtube.png" alt="icon-yt"></a>
-                                </nav>
-                        </li>
-                    </ul>                      
-            </aside>
-       </main> 
-       <footer>
-            <p>
-                SCI Florida Export é a loja de armas para todas as suas necessidades de tiro. Oferecemos uma ampla seleção de armas de fogo, incluindo: revólveres, espingardas, rifles, munições, miras e óticas de rifle, bem como metralhadoras colecionáveis ​​e outras armas NFA / Classe 3. A Impact também atende às necessidades de policiais e militares com nossa ampla variedade de armas e acessórios táticos.
-            </p>
-            <br>
-            <p>&copy; 2021 SCI Florida Export Todos os direitos</p>
-       </footer>
-       <script id="nav">
-                let nav = document.getElementById('nav');
-    
-                if(window.innerWidth < 450){
-                    nav.style.display = 'none';
-                } else {
-                    nav.style.display = 'block';
-                }
-       </script>
-</body>
+</body> 
 </html>

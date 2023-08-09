@@ -1,285 +1,239 @@
-@charset "UTF-8";
-
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue-Regular.ttf')format('truetype');
-}
-
-/*root*/
-:root{
-    --cor-default: #232220;
-
-    --font-destaque: 'Bebas Neue';
-    --font-default: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family= Poppins: wght @400;500;600;700 & display=swap');
 
 *{
-    margin: 0px;
-    padding: 0px;
-} /* agora falta alinhar as coisas*/
-
-p{
-    font-family: var(--font-default);
-    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: red;
+    --text-color: black;
+    --bg-color: white;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color)
 }
 
-/*Header*/
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+section{
+    padding: 4rem 0 3rem;
+}
+/* cabeçalho*/
 header{
-    background-color: #EEEEEE;
-    min-width: 300px;
-    margin: auto;
-    margin-bottom: 0px;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
 }
-
-
-header > img {
-    width: 300px;
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow-y: auto;
 }
-
-
-/* nav */
-nav#nav {
-    margin-top: 0px;
-    padding: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
-    margin: auto;
+.logo{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
 }
-
-nav#nav > a {
-    font-family: var(--font-destaque);
-    letter-spacing: 1px;
-    text-decoration: none;
-    padding: 8px;
-    margin-right: 5px;
-    color: black;
+#carrinho-icone{
+    font-size: 1.8rem;
+    cursor: pointer;
 }
-
-nav#nav > a:hover {
-    transition-duration: 0.5s;
-    background-color: #EEEEEE;
-    color: rgb(204, 14, 14);
-}
-
-
-div#banner{
-    margin-bottom: 10px;
-}
-
-
-div#banner > picture > img{
-    max-width: 100%;
-}
-
-
-#handguns > h3{
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-}
-
-#assault-rifles > h3{
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-}
-
-#shotguns > h3{
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-}
-
-
-#ammunitions > h3 {
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-} 
-
-
-#optics > h3{
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-}
-
-#acessories > h3 {
-    text-align: center;
-    max-width: 350px;
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-}
-
-.opcoes{
-    border: 3px solid black;
-    max-width: 350px;
-    display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    background-color: #232220;
-    color: white;
-}
-
-.opcoes >  a > img{
-    max-width: 100%;
-    display: block;
-    height: 200px;
-    border-top: 2px solid black;
-}
-
-main{
-    max-width: 1200px;
-    min-width: 300px;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-#classes-produtos{
-    max-width: 98%;
-    margin: auto;
-    min-width: 20%;
-    text-align: center;
-}
-
-hr{  
-    max-width: 1200px;
-}
-
-main > #sobre > h2 {
-    font-family: var(--font-destaque);
-    font-size: 1.8em;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-align: center
-}
-
-main > #sobre {
-    padding: 20px 0px;
-    text-align: justify;
-}
-
-main > #sobre p {
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-main > #sobre > aside > p {
-    text-align: center;
-}
-
-main > #formulario{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-main > #formulario > h2{
-    font-family: var(--font-destaque);
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-main > #formulario > form > input {
-    padding: 10px;
-    max-width: 230px;
-    border: 1px solid black;
-    font-size: 1em;
-    background-color: #d8d2d2;
-}
-
-main > #formulario > form > #button {
-    padding: 10px;
-    max-width: 150px;
-    background-color: #D02000;
-    color: white;
-    font-weight: bolder;
-    font-size: 1em;
-    border: 1px solid black;
-}
-
-main > #formulario > form > #button:hover {
-    background-color: black;
-}
-
-main > #contatos {
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
-
-main > #contatos > ul > li > h3 {
-    margin-bottom: 20px;
-    font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main > #contatos > ul > li {
-    margin-bottom: 20px;
-}
-
-.links {
-    text-decoration: none;
-    color: #73dcec;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.links > a {
-    text-decoration: none;
-    color: #73dcec;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.links:hover {
-    color: rgb(85, 7, 7);
-    transition-duration: 0.4s;
-}
-
-.links > a:hover {
-    color: rgb(85, 7, 7);
-    transition-duration: 0.4s;
-}
-
-.links > a#fb > img:hover {
-    background-color: #4267B2;
-    border-radius: 20px;
-}
-
-.links > a#tt > img:hover {
-    background-color: #36B9FF;
-    border-radius: 20px;
-}
-
-.links > a#insta > img:hover {
-    background-image: linear-gradient(to top, #C7539A,#518EC9,#EDA822,#D62555,#E54723,#4950A2);
-    border-radius: 20px;
-}
-
-.links > a#yt > img:hover {
-    background-color: rgb(250, 85, 85);
-    border-radius: 20px;
-}
-
-footer{
-    margin-bottom: 30px;
-    font-size: 15px;
-    text-align: center;
-    background-color: black;
-    color: white;
+/* carrinho ao lado que irá aparecer*/
+.carrinho{
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    height: 650px;
     padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+.carrinho.ativo{
+    right: 0;
+}
+.carrinho-titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.carrinho-caixa{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.carrinho-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detalhes-caixa{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.carrinho-produto-titulo{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.carrinho-preco{
+    font-weight: 500;
+}
+.carrinho-quantidade{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.carrinho-remover{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor:pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-titulo{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-preco{
+    margin-left: 0.5rem;
+}
+.btn-comprar{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-comprar:hover{
+    background: var(--text-color);
+
+}
+#fechar-carrinho{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.titulo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.shopp{
+    margin-top: 2em;
+}
+/* conteudo loja*/
+.conteudo-loja{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap: 1.5rem;
+}
+.produto-box{
+    position: relative;
+}
+.produto-box:hover{
+    padding: 10px;
+    border: 1px transparent var(--text-color);
+    transition: 0.4s;
+}
+.produto-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.produto-titulo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.preco{
+    font-weight: 500;
+}
+.add-carrinho{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-carrinho :hover{
+    background: hsl(249, 32%, 17%);   
+}
+/*Pontos de interrupção tornando responsivo*/
+@media(max-width: 1080px){
+    .nav{
+        padding: 15px;
+    }
+    selection{
+        padding: 3rem 0 2rem;
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .shopp{
+        margin-top: 2rem !important;
+    }
 }
 
+@media(max-width: 400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1 rem;
+    }
+    .carrinho{
+        width: 320px;
+    }
+}
 
+@media(max-width: 360px){
+
+    .shopp{
+        margin-top: 1rem !important;
+    }
+    .carrinho{
+        width: 280px;
+    }
+}
