@@ -1,83 +1,134 @@
-html, body {
-   height: 100%;
- }
- 
- body {
+.header {
+   width: 100%;
+   height: 80px;
+   background-color: white;
+   box-shadow: 0px 0px 10px grey;
+   display: flex;
    align-items: center;
-   background-color: #1D1F20;
+   justify-content: center;
+}
+
+.header .container {
+   width: 1180px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.menu ul {
+   display: flex;
+   list-style: none;
+}
+
+.menu ul li {
+   margin-left: 20px;
+   font-size: 18px;
+   font-weight: bold;
+
+}
+
+.menu ul li a {
+   color: #707070;
+   text-decoration: none;
+}
+
+.menu ul li.active a {
+   color: purple;
+}
+
+.banner {
+   width: 100%;
+   height: 395px;
+   background-image: url(https://www.einerd.com.br/wp-content/uploads/2017/03/photodune-9235903-game-m-16x91-890x501.jpg);
    display: flex;
    justify-content: center;
- }
- 
- .loader  {
-   animation: rotate 1s infinite;  
-   height: 50px;
-   width: 50px;
- }
- 
- .loader:before,
- .loader:after {   
-   border-radius: 50%;
-   content: '';
-   display: block;
-   height: 20px;  
-   width: 20px;
- }
- .loader:before {
-   animation: ball1 1s infinite;  
-   background-color: #cb2025;
-   box-shadow: 30px 0 0 #f8b334;
-   margin-bottom: 10px;
- }
- .loader:after {
-   animation: ball2 1s infinite; 
-   background-color: #00a096;
-   box-shadow: 30px 0 0 #97bf0d;
- }
- 
- @keyframes rotate {
-   0% { 
-     -webkit-transform: rotate(0deg) scale(0.8); 
-     -moz-transform: rotate(0deg) scale(0.8);
-   }
-   50% { 
-     -webkit-transform: rotate(360deg) scale(1.2); 
-     -moz-transform: rotate(360deg) scale(1.2);
-   }
-   100% { 
-     -webkit-transform: rotate(720deg) scale(0.8); 
-     -moz-transform: rotate(720deg) scale(0.8);
-   }
- }
- 
- @keyframes ball1 {
-   0% {
-     box-shadow: 30px 0 0 #f8b334;
-   }
-   50% {
-     box-shadow: 0 0 0 #f8b334;
-     margin-bottom: 0;
-     -webkit-transform: translate(15px,15px);
-     -moz-transform: translate(15px, 15px);
-   }
-   100% {
-     box-shadow: 30px 0 0 #f8b334;
-     margin-bottom: 10px;
-   }
- }
- 
- @keyframes ball2 {
-   0% {
-     box-shadow: 30px 0 0 #97bf0d;
-   }
-   50% {
-     box-shadow: 0 0 0 #97bf0d;
-     margin-top: -20px;
-     -webkit-transform: translate(15px,15px);
-     -moz-transform: translate(15px, 15px);
-   }
-   100% {
-     box-shadow: 30px 0 0 #97bf0d;
-     margin-top: 0;
-   }
- }
+   margin-bottom: 65px;
+}
+
+.banner .container {
+   width: 787px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.banner h1 {
+   font-size: 42px;
+   font-weight: bold;
+   color: white;
+   margin-bottom: 63px;
+}
+
+.banner p {
+   font-size: 20px;
+   color: white;
+
+}
+
+.content {
+   width: 1180px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.content h2 {
+   font-size: 42px;
+   font-weight: bold;
+   color: purple;
+   margin-bottom: 38px;
+}
+
+.content .product-list {
+   width: 1180px;
+  
+}
+
+.product-list .row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 27px;
+}
+
+.complete_list_container {
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+   align-items: center;
+   align-content: center;
+}
+
+.complete_list {
+   background-color: #272727;
+   color: white;
+   padding: 20px 50px;
+   border-radius: 30px;    
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.footer {
+   background-color: #272727;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   padding: 50px;
+}
+
+.footer .container{
+   width: 1180px;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer .social_networks {
+   display: flex;
+}
+
+
+
