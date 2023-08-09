@@ -1,28 +1,665 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas e Calçados</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="ad-container">
-        <img src="anuncio.jpg" alt="Anúncio" class="ad-image">
-        <div class="ad-info">
-            <h2>Confira nossa coleção de moda!</h2>
-            <p>Encontre camisas, calções, calças, blusas, moletons, meias e tênis das melhores marcas e estilos.</p>
-            <a href="#produtos" class="btn">Ver produtos</a>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="nav-background">
+      <div id="wrapper-nav">
+        <nav id="nav-bar">
+          <div id="left-bar">
+            <img
+              id="logo"
+              src="https://companieslogo.com/img/orig/NKE.D-14bad6cf.png?t=1632522146"
+              alt=""
+            />
+          </div>
+          <div id="center-bar">
+            <ul id="menu">
+              <li class="options">Lançamentos</li>
+              <li class="options">Feminino</li>
+              <li class="options">Masculino</li>
+              <li class="options">Infantil</li>
+            </ul>
+          </div>
+          <div id="right-bar">
+            <button id="mobile-button" onclick="abrirmenu()">
+              <span class="material-symbols-outlined simbolo"> menu </span>
+            </button>
+
+            <div id="search-div">
+              <button class="search-button" id="search-button">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+              <input class="search-input" type="text" placeholder="Buscar" />
+            </div>
+          </div>
+        </nav>
+        <div id="pushclass" class="show">
+          <ul id="mobile-menu">
+            <li class="options">Lançamentos</li>
+            <li class="options">Feminino</li>
+            <li class="options">Masculino</li>
+            <li class="options">Infantil</li>
+          </ul>
         </div>
+      </div>
     </div>
+    <div id="wrapper">
+      <div id="card-nike">
+        <picture>
+          <source
+            width="900px"
+            srcset="img/grande.png"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="img/pequeno.png"
+            media="(max-width: 550px)"
+            width="300px"
+          />
+          <img src="img/grande.png" width="600px" alt="" />
+        </picture>
+        <div id="card-buttons">
+          <button class="card-button">Compre Aqui</button>
+          <button class="card-button">Saiba Mais</button>
+        </div>
+      </div>
+      <hr class="hr" />
+      <div id="nike-shoes">
+        <h1 class="title">Tênis</h1>
+        <div id="shoes-div">
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20230310112516_2362997638_DZ.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE DUNK LOW <br />
+              "PINK PAISLEY"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230309172213_3198996802_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR FORCE <br />
+              "NEXT NATURE"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230309095109_1841998159_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR MAX PLUS <br />
+              "UNIVERSITY BLUE
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230309084420_2487997513_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS AIR JORDAN 6 RETRO <br />
+              "COOL GREY"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230309084038_5327994673_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE DUNK LOW RETRO <br />
+              "BLACK PANDA"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230308122447_4646995354_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR MAX PLUS <br />
+              "RAINBOW"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230224095327_878999122_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR JORDAN <br />
+              "DUNK ON MARS"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230301133235_2641997359_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR JORDAN 1 MID <br />
+              "PALOMINO"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230120152535_9836990164_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR JORDAN 5 <br />
+              "AQUA"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230210163250_7773992227_D.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              TÊNIS NIKE AIR JORDAN 1 <br />
+              "COURT PURPLE"
+            </p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220804113628_8679991321_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">TÊNIS NIKE AIR JORDAN 1 LOW</p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shoes-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220615171211_307999693_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">TÊNIS NIKE AIR JORDAN 1 LOW OG</p>
+            <p class="produto-preco">R$ 999,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr" />
+      <div id="nike-shirts">
+        <h1 class="title">Camisetas</h1>
+        <div id="shirts-div">
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/023045IX.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">Camiseta Nike</p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/0230451P.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">Camiseta Nike</p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/024315ID.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Corinthians <br />
+              Academy Pro Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/024332ID.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">Camiseta Nike Corinthians Masculina</p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/02393617.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Dri-FIT <br />
+              Reset Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/0249217T.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Dri-FIT<br />
+              Ready Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/0114817T.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Pro Dri-FIT <br />
+              Reset Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/01464915.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Dri-FIT <br />
+              Wild Run Miler Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/011481P1.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camiseta Nike Pro Dri-FIT <br />
+              Reset Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
 
-    <!-- Seção de Produtos -->
-    <section id="produtos">
-        <h3>Produtos em Destaque</h3>
-        <!-- Coloque aqui a lista de produtos em destaque -->
-    </section>
-
-    <!-- Outras seções e conteúdos relacionados aos produtos podem ser adicionados aqui -->
-
-</body>
+          <div class="shirts-card">
+            <img
+              src="https://imgnike-a.akamaihd.net/768x768/025214ID.jpg"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              Camisa Nike PSG IV 2023/24 <br />
+              Torcedor Pro Masculina
+            </p>
+            <p class="produto-preco">R$ 99,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr" />
+      <div id="nike-pants">
+        <h1 class="title">Shorts & Calças</h1>
+        <div id="pants-div">
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20230314162903_9460990540_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              CALÇA FLECEE NIKE X <br />
+              STUSSY CINZA
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20230314160255_3602996398_DZ.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              CALÇA FLECEE NIKE X <br />
+              STUSSY PRETO
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220708170737_155999845_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              CALÇA MOLETOM STUSSY STOCK <br />
+              PRINTED PANT PRETO
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20221020153612_479999521_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              CALÇA NIKE X <br />
+              BILLIE EILISH VERDE
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220622123735_8165991835_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              CALÇA NRG LA FLC PANT <br />
+              BILLIE EILISH BEGE
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220623132548_5360994640_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              SHORTS U NK BT22 <br />
+              SUNDAY BEGE
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220623132356_2625997375_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              SHORTS U NK BT22 <br />
+              SUNDAY PRETO
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <div class="pants-card">
+            <img
+              src="https://maze.cdn.plataformaneo.com.br/produto/20220805095659_6745993255_D.png"
+              alt=""
+              class="produto-img"
+            />
+            <p class="produto-name">
+              SHORT STUSSY SMOOTH STOCK <br />
+              WATER PRETO
+            </p>
+            <p class="produto-preco">R$ 299,99</p>
+            <div class="buy-cart-buttons">
+              <button class="produto-comprar">Comprar</button>
+              <button class="produto-comprar">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="help-footer">
+          <ul class="footer-menu">
+            Encontre Uma Loja Nike
+            <li class="footer-option">Cadastre-se para receber novidades</li>
+            <li class="footer-option">Cartão Presente</li>
+          </ul>
+          <ul class="footer-menu">
+            Ajuda
+            <li class="footer-option">Dúvidas Gerais</li>
+            <li class="footer-option">Encontre seu Tamanho</li>
+            <li class="footer-option">Entregas</li>
+            <li class="footer-option">Pedidos</li>
+            <li class="footer-option">Trocas e Devoluções</li>
+            <li class="footer-option">Pagamentos</li>
+            <li class="footer-option">Produtos</li>
+            <li class="footer-option">Corporativo</li>
+            <li class="footer-option">Fale Conosco</li>
+          </ul>
+          <ul class="footer-menu">
+            Sobre a Nike
+            <li class="footer-option">Feito para Jogar</li>
+            <li class="footer-option">Sustentabilidade</li>
+          </ul>
+        </div>
+        <hr class="hr2" />
+        <div id="direitos-nike">
+          <p class="footer-option">Brasil</p>
+          <p class="footer-option">Política de Privacidade</p>
+          <p class="footer-option">Termos de Uso</p>
+          <p class="footer-option">
+            © 2023 <s>Nike</s>. Nenhum direito reservado. Site ilustrativo e de
+            cunho educativo.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
