@@ -38,3 +38,22 @@ header {
     display: block;
     margin-top: 10px;
 }
+
+button{
+    padding: 10px 20px;
+    background: #1B3B56;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+button:hover{
+    border: 1px solid #8B634A;
+    background: #8B634A;
+    color: #fff;
+    transform: scale(1.10);
+}
