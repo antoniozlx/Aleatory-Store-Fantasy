@@ -57,3 +57,9 @@ button:hover{
     color: #fff;
     transform: scale(1.10);
 }
+@media screen and (max-width: 428px){
+    
+    header .right .imagem{
+        width: 80%;
+    }
+}
