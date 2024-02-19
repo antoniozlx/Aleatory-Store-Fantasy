@@ -52,3 +52,104 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Headshops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card .front {
+            background-color: #f0f0f0;
+        }
+        .card .back {
+            background-color: #007bff;
+            color: #ffffff;
+            transform: rotateY(180deg);
+        }
+        .card .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .card h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .card button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <div class="logo"></div>
+                <h1>Loja de Headshops</h1>
+                <p>Digite o que você procura</p>
+                <button>Entrar ou Cadastrar</button>
+            </div>
+            <div class="back">
+                <h1>Bem-vindo(a)</h1>
+                <p>Entrar ou Cadastrar</p>
+                <button>Entrar ou Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
