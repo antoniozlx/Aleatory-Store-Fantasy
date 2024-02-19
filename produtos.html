@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Loja Online</title>
+    <title>Clothing Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .container li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container li:hover {
+            background-color: #f2f2f2;
+        }
+
+        .category-link {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Roupas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="banner">
-            <img src="loja.jpg" alt="Loja">
-            <h1>Bem-vindo à nossa loja online!</h1>
-            <p>Aqui você encontrará as melhores promoções e roupas de hip-hop.</p>
-        </section>
-        <section class="promocoes">
-            <h2>Promoções</h2>
-            <ul>
-                <li>Promoção 1</li>
-                <li>Promoção 2</li>
-                <li>Promoção 3</li>
-            </ul>
-        </section>
-        <section class="contato">
-            <h2>Contato</h2>
-            <p>Dúvidas? Entre em contato conosco.</p>
-            <a href="mailto:loja@exemplo.com">loja@exemplo.com</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2022 Loja Online. Todos os direitos reservados.</p>
-    </footer>
+
+<ul class="container">
+    <li class="category-item"><a class="category-link" href="#">Camisetas</a></li>
+    <li class="category-item"><a class="category-link" href="#">3XL</a></li>
+    <li class="category-item"><a class="category-link" href="#">Plus Size</a></li>
+    <li class="category-item"><a class="category-link" href="#">Regatas</a></li>
+    <li class="category-item"><a class="category-link" href="#">Bermudas</a></li>
+    <li class="category-item"><a class="category-link" href="#">Inverno</a></li>
+    <li class="category-item"><a class="category-link" href="#">Bonés</a></li>
+    <li class="category-item"><a class="category-link" href="#">Headshop</a></li>
+    <li class="category-item"><a class="category-link" href="#">Ofertas</a></li>
+</ul>
+
 </body>
 </html>
