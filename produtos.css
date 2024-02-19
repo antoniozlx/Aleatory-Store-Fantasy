@@ -1,49 +1,4 @@
 
-/* Define o estilo dos cards de produtos */
-.card {
-  width: 30%;
-  height: 300px;
-  background: var(--bg-claro);
-  color: var(--texto-claro);
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  transition: all 0.3s ease;
-}
-
-/* Define o estilo dos cards de produtos quando o mouse passa sobre eles */
-.card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Define o estilo das imagens dos produtos */
-.card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Define o estilo dos nomes dos produtos */
-.card h3 {
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Define o estilo dos preços dos produtos */
-.card p {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-/* Define o estilo dos botões de comprar */
 .card button {
   width: 100px;
   height: 40px;
@@ -56,16 +11,3 @@
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
-}
-
-/* Define o estilo dos botões de comprar quando o mouse passa sobre eles */
-.card button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Define o estilo dos botões de comprar quando pressionados */
-.card button:active {
-  transform: translateY(2px);
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-}
