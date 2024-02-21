@@ -1,21 +1,19 @@
-@import 'https://unpkg.com/open-props' layer(design.system);
-@import 'https://unpkg.com/open-props/normalize.dark.min.css'
+@import "https://unpkg.com/open-props" layer(design.system);
+@import "https://unpkg.com/open-props/normalize.dark.min.css"
   layer(base.normalize);
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap");
 
-@import 'https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css'
+@import "https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css"
   layer(design.utilities);
 /* 
 Source code of these utilities: 
 https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css 
 */
 
-
-
 @layer base.normalize-overrides {
   :root {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     --surface-1: black;
     --surface-2: oklch(0.19 0 0);
     --text-1: white;
@@ -182,10 +180,3 @@ https://github.com/mobalti/layout-craft/blob/main/lib/utilities.css
     }
   }
 }
-
-
-
-
-
-
-<center><a href="produtos.html">🔱Cátalogo🔱</a></center>
