@@ -1,231 +1,109 @@
 <html>
 <head>
-  <style>
-    /* Define as cores do tema claro e escuro */
-    :root {
-      --bg-claro: #fff;
-      --bg-escuro: #000;
-      --texto-claro: #000;
-      --texto-escuro: #fff;
-      --vermelho: #f00;
-      --azul: #00f;
-    }
-
-    /* Define o estilo padrão da página */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Define o estilo da aba de site */
-    .aba {
-      width: 100%;
-      height: 50px;
-      background: var(--bg-claro);
-      color: var(--texto-claro);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* Define o estilo do botão de alternar tema */
-    .botao-tema {
-      width: 40px;
-      height: 40px;
-      border: none;
-      border-radius: 50%;
-      background: var(--bg-claro);
-      color: var(--texto-claro);
-      font-size: 20px;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s ease;
-    }
-
-    /* Define o estilo do botão de alternar tema quando ativo */
-    .botao-tema.ativo {
-      transform: rotate(180deg);
-      background: var(--bg-escuro);
-      color: var(--texto-escuro);
-    }
-
-    /* Define o estilo do título da aba de site */
-    .titulo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    /* Define o estilo do conteúdo da página */
-    .conteudo {
-      width: 80%;
-      margin: 20px auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    /* Define o estilo dos cards de produtos */
-    .card {
-      width: 30%;
-      height: 300px;
-      background: var(--bg-claro);
-      color: var(--texto-claro);
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      padding: 10px;
-      transition: all 0.3s ease;
-    }
-
-    /* Define o estilo dos cards de produtos quando o mouse passa sobre eles */
-    .card:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    /* Define o estilo das imagens dos produtos */
-    .card img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    /* Define o estilo dos nomes dos produtos */
-    .card h3 {
-      font-size: 18px;
-      font-weight: normal;
-      margin: 0;
-    }
-
-    /* Define o estilo dos preços dos produtos */
-    .card p {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    /* Define o estilo dos botões de comprar */
-    .card button {
-      width: 100px;
-      height: 40px;
-      border: none;
-      border-radius: 20px;
-      background: var(--vermelho);
-      color: var(--bg-claro);
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s ease;
-    }
-
-    /* Define o estilo dos botões de comprar quando o mouse passa sobre eles */
-    .card button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    /* Define o estilo dos botões de comprar quando pressionados */
-    .card button:active {
-      transform: translateY(2px);
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* Define o estilo do scroll da página */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    /* Define o estilo da barra de rolagem */
-    ::-webkit-scrollbar-thumb {
-      background: var(--azul);
-      border-radius: 10px;
-    }
-
-    /* Define o estilo da barra de rolagem quando o mouse passa sobre ela */
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--vermelho);
-    }
-
-    /* Define o estilo da faixa da barra de rolagem */
-    ::-webkit-scrollbar-track {
-      background: var(--bg-claro);
-      border-radius: 10px;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* Define o estilo da página quando o tema escuro é ativado */
-    .tema-escuro {
-      --bg-claro: #000;
-      --bg-escuro: #fff;
-      --texto-claro: #fff;
-      --texto-escuro: #000;
-    }
-  </style>
+  <!-- Linka o arquivo CSS externo -->
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <!-- Cria a aba de site -->
   <div class="aba">
-    <!-- Cria o título da aba -->
-    <div class="titulo">Loja de Roupas Online</div>
+    <!-- Cria o título da aba de site -->
+    <div class="titulo">
+      <h1>Loja de Roupas</h1>
+    </div>
+    <!-- Cria a barra de pesquisa -->
+    <div class="pesquisa">
+      <input type="text" placeholder="Pesquisar...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <!-- Cria o carrinho de compras -->
+    <div class="carrinho">
+      <button><i class="fas fa-shopping-cart"></i></button>
+    </div>
     <!-- Cria o botão de alternar tema -->
-    <button class="botao-tema" onclick="alternarTema()">☀️</button>
+    <div class="botao-tema">
+      <button id="tema"><i class="fas fa-sun"></i></button>
+    </div>
+  </div>
+  <!-- Cria o menu -->
+  <div class="menu">
+    <!-- Cria as categorias de roupas -->
+    <div class="categorias">
+      <ul>
+        <li><a href="#">Camisetas</a></li>
+        <li><a href="#">Calças</a></li>
+        <li><a href="#">Vestidos</a></li>
+        <li><a href="#">Sapatos</a></li>
+        <li><a href="#">Acessórios</a></li>
+      </ul>
+    </div>
+    <!-- Cria as informações de contato, endereço e redes sociais -->
+    <div class="informacoes">
+      <ul>
+        <li><a href="#"><i class="fas fa-phone"></i> (11) 1234-5678</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - São Paulo - SP</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> contato@lojaderoupas.com</a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
   </div>
   <!-- Cria o conteúdo da página -->
   <div class="conteudo">
     <!-- Cria um card de produto -->
     <div class="card">
       <!-- Cria a imagem do produto -->
-      <img src="camiseta-preta.jpg" alt="Camiseta Preta">
+      <img src="camiseta-branca.jpg" alt="Camiseta Branca">
       <!-- Cria o nome do produto -->
-      <h3>Camiseta Preta</h3>
+      <h3>Camiseta Branca</h3>
       <!-- Cria o preço do produto -->
-      <p>R$ 49,90</p>
+      <p>R$ 29,90</p>
       <!-- Cria o botão de comprar -->
       <button>Comprar</button>
     </div>
     <!-- Cria outro card de produto -->
     <div class="card">
       <!-- Cria a imagem do produto -->
-      <img src="calca-jeans.jpg" alt="Calça Jeans">
+      <img src="calca-vermelha.jpg" alt="Calça Vermelha">
       <!-- Cria o nome do produto -->
-      <h3>Calça Jeans</h3>
+      <h3>Calça Vermelha</h3>
       <!-- Cria o preço do produto -->
-      <p>R$ 99,90</p>
+      <p>R$ 79,90</p>
       <!-- Cria o botão de comprar -->
       <button>Comprar</button>
     </div>
     <!-- Cria mais um card de produto -->
     <div class="card">
       <!-- Cria a imagem do produto -->
-      <img src="vestido-vermelho.jpg" alt="Vestido Vermelho">
+      <img src="vestido-branco-e-vermelho.jpg" alt="Vestido Branco e Vermelho">
       <!-- Cria o nome do produto -->
-      <h3>Vestido Vermelho</h3>
+      <h3>Vestido Branco e Vermelho</h3>
       <!-- Cria o preço do produto -->
-      <p>R$ 149,90</p>
+      <p>R$ 99,90</p>
       <!-- Cria o botão de comprar -->
       <button>Comprar</button>
     </div>
   </div>
-  <!-- Cria um script para alternar o tema da página -->
-  <script>
-    // Define uma variável para armazenar o botão de tema
-    var botaoTema = document.querySelector(".botao-tema");
-    // Define uma função para alternar o tema da página
-    function alternarTema() {
-      // Alterna a classe "ativo" no botão de tema
-      botaoTema.classList.toggle("ativo");
-      // Alterna a classe "tema-escuro" no corpo da página
-      document.body.classList.toggle("tema-escuro");
-    }
-  </script>
+  <!-- Cria o rodapé da página -->
+  <div class="rodape">
+    <!-- Cria o logo da loja -->
+    <div class="logo">
+      <h1>Loja de Roupas</h1>
+    </div>
+    <!-- Cria os links para política de privacidade, troca e devoluções -->
+    <div class="links">
+      <ul>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Troca e Devoluções</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </div>
+    <!-- Cria o selo de segurança -->
+    <div class="selo">
+      <img src="selo.png" alt="Selo de Segurança">
+    </div>
+  </div>
+  <!-- Linka o arquivo JavaScript externo -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-<center><a href="produtos.html">🔱Cátalogo🔱</a></center>
