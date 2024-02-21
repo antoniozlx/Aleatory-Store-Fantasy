@@ -1,113 +1,121 @@
-<html>
-<head>
-  <!-- Linka o arquivo CSS externo -->
-  <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-  <!-- Cria a aba de site -->
-  <div class="aba">
-    <!-- Cria o título da aba de site -->
-    <div class="titulo">
-      <h1>Loja de Roupas</h1>
-    </div>
-    <!-- Cria a barra de pesquisa -->
-    <div class="pesquisa">
-      <input type="text" placeholder="Pesquisar...">
-      <button><i class="fas fa-search"></i></button>
-    </div>
-    <!-- Cria o carrinho de compras -->
-    <div class="carrinho">
-      <button><i class="fas fa-shopping-cart"></i></button>
-    </div>
-    <!-- Cria o botão de alternar tema -->
-    <div class="botao-tema">
-      <button id="tema"><i class="fas fa-sun"></i></button>
-    </div>
-  </div>
-  <!-- Cria o menu -->
-  <div class="menu">
-    <!-- Cria as categorias de roupas -->
-    <div class="categorias">
-      <ul>
-        <li><a href="#">Camisetas</a></li>
-        <li><a href="#">Calças</a></li>
-        <li><a href="#">Vestidos</a></li>
-        <li><a href="#">Sapatos</a></li>
-        <li><a href="#">Acessórios</a></li>
-      </ul>
-    </div>
-    <!-- Cria as informações de contato, endereço e redes sociais -->
-    <div class="informacoes">
-      <ul>
-        <li><a href="#"><i class="fas fa-phone"></i> (11) 1234-5678</a></li>
-        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - São Paulo - SP</a></li>
-        <li><a href="#"><i class="fas fa-envelope"></i> contato@lojaderoupas.com</a></li>
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- Cria o conteúdo da página -->
-  <div class="conteudo">
-    <!-- Cria um card de produto -->
-    <div class="card">
-      <!-- Cria a imagem do produto -->
-      <img src="camiseta-branca.jpg" alt="Camiseta Branca">
-      <!-- Cria o nome do produto -->
-      <h3>Camiseta Branca</h3>
-      <!-- Cria o preço do produto -->
-      <p>R$ 29,90</p>
-      <!-- Cria o botão de comprar -->
-      <button>Comprar</button>
-    </div>
-    <!-- Cria outro card de produto -->
-    <div class="card">
-      <!-- Cria a imagem do produto -->
-      <img src="calca-vermelha.jpg" alt="Calça Vermelha">
-      <!-- Cria o nome do produto -->
-      <h3>Calça Vermelha</h3>
-      <!-- Cria o preço do produto -->
-      <p>R$ 79,90</p>
-      <!-- Cria o botão de comprar -->
-      <button>Comprar</button>
-    </div>
-    <!-- Cria mais um card de produto -->
-    <div class="card">
-      <!-- Cria a imagem do produto -->
-      <img src="vestido-branco-e-vermelho.jpg" alt="Vestido Branco e Vermelho">
-      <!-- Cria o nome do produto -->
-      <h3>Vestido Branco e Vermelho</h3>
-      <!-- Cria o preço do produto -->
-      <p>R$ 99,90</p>
-      <!-- Cria o botão de comprar -->
-      <button>Comprar</button>
-    </div>
-  </div>
-  <!-- Cria o rodapé da página -->
-  <div class="rodape">
-    <!-- Cria o logo da loja -->
-    <div class="logo">
-      <h1>Loja de Roupas</h1>
-    </div>
-    <!-- Cria os links para política de privacidade, troca e devoluções -->
-    <div class="links">
-      <ul>
-        <li><a href="#">Política de Privacidade</a></li>
-        <li><a href="#">Troca e Devoluções</a></li>
-        <li><a href="#">Termos de Uso</a></li>
-      </ul>
-    </div>
-    <!-- Cria o selo de segurança -->
-    <div class="selo">
-      <img src="selo.png" alt="Selo de Segurança">
-    </div>
-  </div>
-  <!-- Linka o arquivo JavaScript externo -->
-  <script src="script.js"></script>
+<body class="block-center-center">
+  <section class="Product inline-center-center gap-4">
+    <a href="#" class="Visual block-center-center">
+      <picture>
+        <source
+          srcset="
+            https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/product-details/images/img-1.avif
+          "
+          type="image/avif"
+        />
+        <img
+          src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/product-details/images/img-1.webp"
+          alt="cheetah hoodie"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/product-details/images/img-2.avif
+          "
+          type="image/avif"
+        />
+        <img
+          src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/product-details/images/img-2.webp"
+          alt="cheetah hoodie"
+        />
+      </picture>
+    </a>
+    <form action="" class="Form block-start-start gap-4">
+      <h3>CHEETAH GLAM HOODIE</h3>
+
+      <div class="Price">$80.00</div>
+
+      <fieldset class="TagList inline-wrap gap-2">
+        <legend><b>Sizes</b>: (choose one)</legend>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-s"
+            id="taglist-radio-size-s"
+            required
+          />
+          <label for="taglist-radio-size-s">S</label>
+        </div>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-m"
+            id="taglist-radio-size-m"
+            required
+          />
+          <label for="taglist-radio-size-m">M</label>
+        </div>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-l"
+            id="taglist-radio-size-l"
+            required
+          />
+          <label for="taglist-radio-size-l">L</label>
+        </div>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-xl"
+            id="taglist-radio-size-xl"
+            required
+          />
+          <label for="taglist-radio-size-xl">XL</label>
+        </div>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-2xl"
+            id="taglist-radio-size-2xl"
+            required
+          />
+          <label for="taglist-radio-size-2xl">2XL</label>
+        </div>
+        <div class="TagToggle block">
+          <input
+            type="radio"
+            name="taglist-radio"
+            value="size-3xl"
+            id="taglist-radio-size-3xl"
+            required
+          />
+          <label for="taglist-radio-size-3xl">3XL</label>
+        </div>
+      </fieldset>
+      <fieldset id="quantity-list" class="QtField inline-center-center gap-2">
+        <label for="quantitySelect">Quantity:</label>
+        <select size="1" id="quantitySelect" name="amount_0_0">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </fieldset>
+
+      <div class="block-start-start gap-2">
+        <button class="Button Primary" type="submit">Pre-Order</button>
+        <small>SHIPS ON JANUARY 5, 2024</small>
+      </div>
+
+      <p>JUMBO SCREENPRINTED GRAPHIC</p>
+    </form>
+  </section>
 </body>
-</html>
-
-
-
-
