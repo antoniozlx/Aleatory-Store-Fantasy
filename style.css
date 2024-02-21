@@ -1,0 +1,133 @@
+/* Define as cores do tema claro e escuro */
+:root {
+    --bg-claro: #fff;
+    --bg-escuro: #000;
+    --texto-claro: #000;
+    --texto-escuro: #fff;
+    --vermelho: #f00;
+    --azul: #00f;
+  }
+  
+  /* Define o estilo padrão da página */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Define o estilo da aba de site */
+  .aba {
+    width: 100%;
+    height: 50px;
+    background: var(--bg-claro);
+    color: var(--texto-claro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Define o estilo do título da aba de site */
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Define o estilo da barra de pesquisa */
+  .pesquisa {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--texto-claro);
+    border-radius: 15px;
+  }
+  
+  /* Define o estilo do campo de texto da barra de pesquisa */
+  .pesquisa input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    padding: 0 10px;
+    outline: none;
+  }
+  
+  /* Define o estilo do botão da barra de pesquisa */
+  .pesquisa button {
+    width: 20%;
+    height: 100%;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background: var(--vermelho);
+    color: var(--bg-claro);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Define o estilo do carrinho de compras */
+  .carrinho {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--texto-claro);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Define o estilo do ícone do carrinho de compras */
+  .carrinho i {
+    font-size: 20px;
+  }
+  
+  /* Define o estilo do botão de alternar tema */
+  .botao-tema {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Define o estilo do botão de alternar tema */
+  .botao-tema button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--bg-claro);
+    color: var(--texto-claro);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Define o estilo do botão de alternar tema quando ativo */
+  .botao-tema button.ativo {
+    transform: rotate(180deg);
+    background: var(--bg-escuro);
+    color: var(--texto-escuro);
+  }
+  
+  /* Define o estilo do menu */
+  .menu {
+    width: 100%;
+    height: 50px;
+    background: var(--vermelho);
+    color: var(--bg-claro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  /*
