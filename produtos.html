@@ -1,272 +1,229 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Loja de Roupa Online</title>
-    <style>
-        /* Estilos gerais */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    /* Define as cores do tema claro e escuro */
+    :root {
+      --bg-claro: #fff;
+      --bg-escuro: #000;
+      --texto-claro: #000;
+      --texto-escuro: #fff;
+      --vermelho: #f00;
+      --azul: #00f;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
+    /* Define o estilo padrão da página */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-        /* Estilos do cabeçalho */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #ffffff;
-            padding: 10px;
-        }
+    /* Define o estilo da aba de site */
+    .aba {
+      width: 100%;
+      height: 50px;
+      background: var(--bg-claro);
+      color: var(--texto-claro);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333333;
-        }
+    /* Define o estilo do botão de alternar tema */
+    .botao-tema {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: var(--bg-claro);
+      color: var(--texto-claro);
+      font-size: 20px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    }
 
-        .menu {
-            display: flex;
-            list-style: none;
-        }
+    /* Define o estilo do botão de alternar tema quando ativo */
+    .botao-tema.ativo {
+      transform: rotate(180deg);
+      background: var(--bg-escuro);
+      color: var(--texto-escuro);
+    }
 
-        .menu li {
-            margin: 0 10px;
-        }
+    /* Define o estilo do título da aba de site */
+    .titulo {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-        .menu a {
-            text-decoration: none;
-            color: #333333;
-        }
+    /* Define o estilo do conteúdo da página */
+    .conteudo {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-        .menu a:hover {
-            color: #999999;
-        }
+    /* Define o estilo dos cards de produtos */
+    .card {
+      width: 30%;
+      height: 300px;
+      background: var(--bg-claro);
+      color: var(--texto-claro);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
 
-        /* Estilos do corpo */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
+    /* Define o estilo dos cards de produtos quando o mouse passa sobre eles */
+    .card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-        .card {
-            width: 300px;
-            margin: 10px;
-            border: 1px solid #cccccc;
-            background-color: #ffffff;
-        }
+    /* Define o estilo das imagens dos produtos */
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+    /* Define o estilo dos nomes dos produtos */
+    .card h3 {
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+    }
 
-        .card h3 {
-            padding: 10px;
-            color: #333333;
-        }
+    /* Define o estilo dos preços dos produtos */
+    .card p {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
 
-        .card p {
-            padding: 10px;
-            color: #999999;
-        }
+    /* Define o estilo dos botões de comprar */
+    .card button {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      background: var(--vermelho);
+      color: var(--bg-claro);
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    }
 
-        .card button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #333333;
-            color: #ffffff;
-            cursor: pointer;
-        }
+    /* Define o estilo dos botões de comprar quando o mouse passa sobre eles */
+    .card button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-        .card button:hover {
-            background-color: #999999;
-        }
+    /* Define o estilo dos botões de comprar quando pressionados */
+    .card button:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-        /* Estilos do rodapé */
-        .footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #ffffff;
-            padding: 10px;
-        }
+    /* Define o estilo do scroll da página */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
 
-        .footer p {
-            color: #333333;
-        }
+    /* Define o estilo da barra de rolagem */
+    ::-webkit-scrollbar-thumb {
+      background: var(--azul);
+      border-radius: 10px;
+    }
 
-        .footer ul {
-            display: flex;
-            list-style: none;
-        }
+    /* Define o estilo da barra de rolagem quando o mouse passa sobre ela */
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--vermelho);
+    }
 
-        .footer ul li {
-            margin: 0 10px;
-        }
+    /* Define o estilo da faixa da barra de rolagem */
+    ::-webkit-scrollbar-track {
+      background: var(--bg-claro);
+      border-radius: 10px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-        .footer ul a {
-            text-decoration: none;
-            color: #333333;
-        }
-
-        .footer ul a:hover {
-            color: #999999;
-        }
-
-        /* Estilos para telas menores que 768px */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-            }
-
-            .menu {
-                margin-top: 10px;
-            }
-
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card {
-                width: 90%;
-            }
-
-            .footer {
-                flex-direction: column;
-            }
-
-            .footer ul {
-                margin-top: 10px;
-            }
-        }
-    </style>
+    /* Define o estilo da página quando o tema escuro é ativado */
+    .tema-escuro {
+      --bg-claro: #000;
+      --bg-escuro: #fff;
+      --texto-claro: #fff;
+      --texto-escuro: #000;
+    }
+  </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <div class="header">
-        <div class="logo">Loja de Roupa Online</div>
-        <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Promoções</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </div>
-
-    <!-- Corpo -->
-    <div class="container">
-        <!-- Produto 1 -->
-        <div class="card">
-            <img src="https://i.imgur.com/7ZJw0QO.jpg" alt="Camiseta branca">
-            <h3>Camiseta branca</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Produto 2 -->
-        <div class="card">
-            <img src="https://i.imgur.com/9X6Zy8w.jpg" alt="Camiseta preta">
-            <h3>Camiseta preta</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Produto 3 -->
-        <div class="card">
-            <img src="https://i.imgur.com/3Z0x1ZC.jpg" alt="Camiseta cinza">
-            <h3>Camiseta cinza</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Produto 4 -->
-        <div class="card">
-            <img src="https://i.imgur.com/7ZJw0QO.jpg" alt="Camiseta branca">
-            <h3>Camiseta branca</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Produto 5 -->
-        <div class="card">
-            <img src="https://i.imgur.com/9X6Zy8w.jpg" alt="Camiseta preta">
-            <h3>Camiseta preta</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Produto 6 -->
-        <div class="card">
-            <img src="https://i.imgur.com/3Z0x1ZC.jpg" alt="Camiseta cinza">
-            <h3>Camiseta cinza</h3>
-            <p>R$ 29,90</p>
-            <button>Comprar</button>
-
-<!-- Cria um card de produto -->
-<div class="card">
-    <!-- Cria a imagem do produto -->
-    <img src="camiseta-preta.jpg" alt="Camiseta Preta">
-    <!-- Cria o nome do produto -->
-    <h3>Camiseta Preta</h3>
-    <!-- Cria o preço do produto -->
-    <p>R$ 49,90</p>
-    <!-- Cria o botão de comprar -->
-    <button>Comprar</button>
+  <!-- Cria a aba de site -->
+  <div class="aba">
+    <!-- Cria o título da aba -->
+    <div class="titulo">Loja de Roupas Online</div>
+    <!-- Cria o botão de alternar tema -->
+    <button class="botao-tema" onclick="alternarTema()">☀️</button>
   </div>
-  <!-- Cria outro card de produto -->
-  <div class="card">
-    <!-- Cria a imagem do produto -->
-    <img src="calca-jeans.jpg" alt="Calça Jeans">
-    <!-- Cria o nome do produto -->
-    <h3>Calça Jeans</h3>
-    <!-- Cria o preço do produto -->
-    <p>R$ 99,90</p>
-    <!-- Cria o botão de comprar -->
-    <button>Comprar</button>
-  </div>
-  <!-- Cria mais um card de produto -->
-  <div class="card">
-    <!-- Cria a imagem do produto -->
-    <img src="vestido-vermelho.jpg" alt="Vestido Vermelho">
-    <!-- Cria o nome do produto -->
-    <h3>Vestido Vermelho</h3>
-    <!-- Cria o preço do produto -->
-    <p>R$ 149,90</p>
-    <!-- Cria o botão de comprar -->
-    <button>Comprar</button>
-  </div>
-
-
-
-        </div>
+  <!-- Cria o conteúdo da página -->
+  <div class="conteudo">
+    <!-- Cria um card de produto -->
+    <div class="card">
+      <!-- Cria a imagem do produto -->
+      <img src="camiseta-preta.jpg" alt="Camiseta Preta">
+      <!-- Cria o nome do produto -->
+      <h3>Camiseta Preta</h3>
+      <!-- Cria o preço do produto -->
+      <p>R$ 49,90</p>
+      <!-- Cria o botão de comprar -->
+      <button>Comprar</button>
     </div>
-
-
-    <!-- Rodapé -->
-    <div class="footer">
-        <p>© 2024 - Loja de Roupa Online</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+    <!-- Cria outro card de produto -->
+    <div class="card">
+      <!-- Cria a imagem do produto -->
+      <img src="calca-jeans.jpg" alt="Calça Jeans">
+      <!-- Cria o nome do produto -->
+      <h3>Calça Jeans</h3>
+      <!-- Cria o preço do produto -->
+      <p>R$ 99,90</p>
+      <!-- Cria o botão de comprar -->
+      <button>Comprar</button>
     </div>
+    <!-- Cria mais um card de produto -->
+    <div class="card">
+      <!-- Cria a imagem do produto -->
+      <img src="vestido-vermelho.jpg" alt="Vestido Vermelho">
+      <!-- Cria o nome do produto -->
+      <h3>Vestido Vermelho</h3>
+      <!-- Cria o preço do produto -->
+      <p>R$ 149,90</p>
+      <!-- Cria o botão de comprar -->
+      <button>Comprar</button>
+    </div>
+  </div>
+  <!-- Cria um script para alternar o tema da página -->
+  <script>
+    // Define uma variável para armazenar o botão de tema
+    var botaoTema = document.querySelector(".botao-tema");
+    // Define uma função para alternar o tema da página
+    function alternarTema() {
+      // Alterna a classe "ativo" no botão de tema
+      botaoTema.classList.toggle("ativo");
+      // Alterna a classe "tema-escuro" no corpo da página
+      document.body.classList.toggle("tema-escuro");
+    }
+  </script>
 </body>
 </html>
-
-
-
