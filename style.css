@@ -1,5 +1,5 @@
 /* Define as cores do tema claro e escuro */
-:root * {
+ :root* {
     --bg-claro: #fff;
     --bg-escuro: #000;
     --texto-claro: #000;
@@ -130,4 +130,3 @@
     padding: 0 20px;
   }
   
-  /*
